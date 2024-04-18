@@ -17,9 +17,13 @@ async def turn_on(target_ip: str, user_name: str, password: str) -> None:
     client = ApiClient(user_name, password)
     device = await client.p110(target_ip)
     await device.on()
+    del client
+    del device
 
 
 async def turn_off(target_ip: str, user_name: str, password: str) -> None:
     client = ApiClient(user_name, password)
     device = await client.p110(target_ip)
     await device.off()
+    del client
+    del device
