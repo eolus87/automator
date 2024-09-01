@@ -1,4 +1,4 @@
-__author__ = "Eolus87"
+__author__ = "eolus87"
 
 # Standard libraries
 from typing import List, Union
