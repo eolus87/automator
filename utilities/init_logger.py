@@ -1,4 +1,4 @@
-__author__ = "Nicolas Gutierrez"
+__author__ = "eolus87"
 
 # Standard libraries
 import os
