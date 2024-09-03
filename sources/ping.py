@@ -1,14 +1,14 @@
 __author__ = "eolus87"
 
 # Standard libraries
-from typing import List, Union
 
 # Third party libraries
-from pythonping import ping
+from ping3 import ping
 
 # Custom libraries
 
-
 def ping_function(target: str) -> float:
-    response = ping(target, count=1, verbose=False)
-    return response.rtt_avg_ms
+    response = ping(target, unit='ms', timeout=2)
+    if response is None or response is False:
+        return 2000.0  # Return 2000ms for unreachable targets
+    return response

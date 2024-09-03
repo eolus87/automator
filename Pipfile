@@ -7,7 +7,8 @@ name = "pypi"
 python-kasa = "*"
 tapo = "*"
 requests = "*"
-pythonping = "*"
+pyyaml = "*"
+ping3 = "*"
 
 [dev-packages]
 
